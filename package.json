@@ -1,14 +1,16 @@
 {
+  "author": "clnelson@github.com",
   "name": "late-nights-syntax",
   "theme": "syntax",
   "version": "1.0.0",
-  "description": "A dark and bright syntax theme built for personal use",
+  "description": "A dark and bright syntax theme built for coding late-nights.",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/late-nights-syntax",
-  "license": "MIT",
+  "dependencies": {},
+  "repository": "https://github.com/clnelson/late-nights-syntax",
+  "license": "GPLv3",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }
