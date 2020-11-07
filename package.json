@@ -1,0 +1,15 @@
+{
+  "name": "late-nights-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A dark and bright syntax theme built for personal use",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/late-nights-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

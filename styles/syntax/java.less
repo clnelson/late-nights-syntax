@@ -1,0 +1,63 @@
+.syntax--source.syntax--java {
+  .syntax--storage {
+    &.syntax--modifier.syntax--import {
+      color: @syntax-;
+    }
+
+    &.syntax--type {
+      color: @syntax-color-type;
+    }
+/*
+    &.syntax--type.syntax--primitive {
+      color: @syntax-color-variable;
+    }
+
+    &.syntax--type.syntax--other {
+      color: @syntax-color-property;
+    }*/
+  }
+
+  .syntax--meta.syntax--definition.syntax--variable {
+    font-weight: bold;
+  }
+
+  .syntax--entity.syntax--name.syntax--type {
+    color: @syntax-color-constant;
+    text-decoration: underline;
+  }
+
+  .syntax--keyword.syntax--control {
+      color: @syntax-color-control;
+      font-weight: bold;
+  }
+
+  .syntax--keyword.syntax--control.syntax--ternary {
+      color: @syntax-bracket;
+      font-weight: bold;
+  }
+
+  .syntax--keyword.syntax--other.syntax--import {
+      color: @syntax-color-import;
+      font-style: italic;
+      font-weight: bold;
+  }
+
+  .syntax--keyword.syntax--operator.syntax--instanceof {
+      color: @syntax-bracket;
+  }
+}
+
+.syntax--source.syntax--java-properties {
+  .syntax--meta.syntax--key-pair {
+    color: @syntax-color-class;
+    &.syntax--punctuation {
+      color: @syntax-bracket;
+    }
+
+    &.syntax--meta.syntax--import {
+        color: @syntax-color-import;
+        font-weight: bold;
+        font-style: italic;
+    }
+  }
+}
