@@ -1,9 +1,8 @@
 .syntax--source.syntax--java {
   .syntax--storage {
     &.syntax--modifier.syntax--import {
-      color: @syntax-color-import;
+      color: @syntax-color-numeric;
     }
-
     &.syntax--type {
       color: @syntax-color-type;
     }
@@ -18,12 +17,17 @@
   }
 
   .syntax--meta.syntax--definition.syntax--variable {
-    font-weight: bold;
+    color: @syntax-color-variable;
+  }
+
+  .syntax--meta.syntax--class.syntax--body,
+  .syntax--meta.syntax--method.syntax--body {
+    color: @syntax-color-type;
   }
 
   .syntax--entity.syntax--name.syntax--type {
-    color: @syntax-color-constant;
-    text-decoration: underline;
+    color: @syntax-color-class;
+    font-weight: 900;
   }
 
   .syntax--keyword.syntax--control {
@@ -33,7 +37,7 @@
 
   .syntax--keyword.syntax--control.syntax--ternary {
       color: @syntax-bracket;
-      font-weight: bold;
+      // font-weight: bold;
   }
 
   .syntax--keyword.syntax--other.syntax--import {
@@ -42,8 +46,22 @@
       font-weight: bold;
   }
 
-  .syntax--keyword.syntax--operator.syntax--instanceof {
+  .syntax--keyword.syntax--operator {
+    &.syntax--instanceof {
+      color: @syntax-color-value;
+    }
+    &.syntax--increment-decrement {
       color: @syntax-bracket;
+      font-weight: bold;
+    }
+    &.syntax--assignment {
+      color: @syntax-bracket;
+      font-weight: bold;
+    }
+    &.syntax--comparison {
+      color: @syntax-color-numeric;
+      font-weight: normal;
+    }
   }
 }
 
