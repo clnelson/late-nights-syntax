@@ -10,7 +10,7 @@
   ],
   "dependencies": {},
   "repository": "https://github.com/clnelson/late-nights-syntax",
-  "license": "GPLv3",
+  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }
