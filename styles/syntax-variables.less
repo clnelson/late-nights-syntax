@@ -7,7 +7,7 @@
 @syntax-cursor-color:          darken(@syntax-accent, 5%);
 @syntax-bracket:               @white;
 @border-color:                 @syntax-guide;
-@syntax-line-comment:          @very-light-gray;
+@syntax-line-comment:          @light-gray;
 @syntax-selection-color:       lighten(@syntax-background-color, 8%);
 @syntax-selection-flash-color: @syntax-accent;
 @syntax-background-color:      @syntax-bg;
@@ -25,13 +25,13 @@
 @syntax-gutter-text-color:                @syntax-gutter;
 @syntax-gutter-text-color-selected:       @syntax-fg;
 @syntax-gutter-background-color:          @syntax-bg;
-@syntax-gutter-background-color-selected: lighten(@syntax-bg, 10%);
+@syntax-gutter-background-color-selected: lighten(@syntax-bg, 5%);
 
 // For git diff info. i.e. in the gutter ----------------------------------------------
-@syntax-color-renamed:  @cyan;
-@syntax-color-added:    @green;
-@syntax-color-modified: @orange;
-@syntax-color-removed:  @red;
+@syntax-color-renamed:  rgb(22, 116, 193);
+@syntax-color-added:    rgb(0, 200, 83);
+@syntax-color-modified: rgb(255, 152, 0);
+@syntax-color-removed:  rgb(221, 30, 47);
 
 // For language entity colors ---------------------------------------------------------
 @syntax-color-variable:   @pink;
@@ -44,11 +44,12 @@
 @syntax-color-method:     @lime;
 @syntax-color-class:      @red;
 @syntax-color-keyword:    @violet;
-@syntax-color-tag:        @white;
+@syntax-color-tag:        @sand;
 @syntax-color-type:       @cyan;
 @syntax-color-attribute:  @yellow;
 @syntax-color-import:     @purple;
 @syntax-color-snippet:    @syntax-fg;
+@syntax-color-other:      @teal;
 
 // Custom syntax variables ------------------------------------------------------------
 // DO NOT use in packages!! -----------------------------------------------------------

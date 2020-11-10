@@ -4,16 +4,14 @@
       color: @syntax-color-numeric;
     }
     &.syntax--type {
-      color: @syntax-color-type;
+      color: darken(@syntax-color-value, 4%);
+      &.syntax--primitive {
+        color: @syntax-color-property;
+      }
+      &.syntax--other {
+        color: @syntax-color-tag;
+      }
     }
-/*
-    &.syntax--type.syntax--primitive {
-      color: @syntax-color-variable;
-    }
-
-    &.syntax--type.syntax--other {
-      color: @syntax-color-property;
-    }*/
   }
 
   .syntax--meta.syntax--definition.syntax--variable {
@@ -22,45 +20,52 @@
 
   .syntax--meta.syntax--class.syntax--body,
   .syntax--meta.syntax--method.syntax--body {
-    color: @syntax-color-type;
+    color: darken(@syntax-color-tag, 12%);
   }
 
-  .syntax--entity.syntax--name.syntax--type {
+  .syntax--variable {
+    &.syntax--language {
+      font-weight: bold;
+    }
+    &.syntax--other {
+      &.syntax--definition {
+        color: @syntax-color-keyword;
+      }
+      &.syntax--object.syntax--property {
+        font-style: normal;
+      }
+    }
+  }
+
+  .syntax--entity.syntax--name.syntax--type.syntax--class {
     color: @syntax-color-class;
-    font-weight: 900;
+    font-weight: bold;
+    font-family: monospace;
   }
 
-  .syntax--keyword.syntax--control {
+  .syntax--constant {
+    &.syntax--language {
+      color: lighten(@syntax-color-import, 6%);
+      font-weight: bold;
+    }
+  }
+
+  .syntax--keyword {
+    &.syntax--control {
       color: @syntax-color-control;
       font-weight: bold;
-  }
-
-  .syntax--keyword.syntax--control.syntax--ternary {
-      color: @syntax-bracket;
-      // font-weight: bold;
-  }
-
-  .syntax--keyword.syntax--other.syntax--import {
+      &.syntax--ternary {
+        color: @syntax-bracket;
+        font-weight: bold;
+      }
+    }
+    &.syntax--other.syntax--import {
       color: @syntax-color-import;
       font-style: italic;
       font-weight: bold;
-  }
-
-  .syntax--keyword.syntax--operator {
+    }
     &.syntax--instanceof {
       color: @syntax-color-value;
-    }
-    &.syntax--increment-decrement {
-      color: @syntax-bracket;
-      font-weight: bold;
-    }
-    &.syntax--assignment {
-      color: @syntax-bracket;
-      font-weight: bold;
-    }
-    &.syntax--comparison {
-      color: @syntax-color-numeric;
-      font-weight: normal;
     }
   }
 }

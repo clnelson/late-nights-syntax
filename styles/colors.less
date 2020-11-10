@@ -1,15 +1,11 @@
 // These colors are specific to my theme. Do not use in a package!
 // You can use the variables/definitions after reassigning the values...
 
-// Defaults ---------------------------------------------------------------------------
-@syntax-hue: 180;
-@syntax-saturation: 13%;
-@syntax-brightness: 22%;
-
 // Main colors ------------------------------------------------------------------------
-@text-fg: hsl(@syntax-hue, 99%, 54%);
-@text-bg: @dark-gray;
-@selected-bg: lighten(@dark-gray, 10%);
+@syntax-hue:  180;
+@text-fg:     #00FFFF; //hsl(@syntax-hue, 99%, 54%);
+@text-bg:     @dark-gray;
+@selected-bg: lighten(@dark-gray, 7%);
 
 // 5 Shades of Gray -------------------------------------------------------------------
 @white:           #ffffff;  // plain ol' standard white
@@ -20,46 +16,25 @@
 @very-dark-gray:  #08121C;  // invisibles
 
 // Colors -----------------------------------------------------------------------------
-@blue:         #59A2F7;
-@cyan:         #00FFFF;
+@sand:         #E8D0A9;
+@teal:         #19C294;
+@blue:         #0582E6;
+@cyan:         #6CE9F1;
+@violet:       #A878D6;
 @purple:       #6E3CA3;
-@violet:       #965BD1;
-@lime:         #5FFF1D;
-@green:        #216F21;
+@pink:         #FA50B6;
 @red:          #A13333;
-@rust:         #813229;
-@pink:         #E353A9;
-@yellow:       #F9F94E;
+@rust:         #904413;
 @orange:       #FF7600;
-@light-orange: #EB8D49;
+@light-orange: #F79E5E;
+@yellow:       #EBE935;
+@lime:         #5FFF1D;
+@green:        #148E32;
 
 // Base colors ------------------------------------------------------------------------
 @syntax-fg:        @text-fg;
 @syntax-bg:        @text-bg;
 @syntax-invisible: @very-dark-gray;
-@syntax-gutter:    darken(@syntax-fg, 25%);
-@syntax-guide:     darken(@very-dark-gray, 5%);
-@syntax-accent:    lighten(@pink, 2%);
-
-/**
-@very-dark-gray: #0E151B;
-@dark-gray: #192D37;
-@gray: #666666;
-@light-gray: #999999;
-@very-light-gray: #F8F8F2;
-@blue: #6272A4;
-@downy: #5EEBB8;
-@cyan: #8BE9FD;
-@soft-cyan: #66D9EF;
-@green: #50FA7B;
-@orange: #FFB86C;
-@pink: #FF79C6;
-@purple: #BD93F9;
-@red: #FF5555;
-@yellow: #F1FA8C;
-@dark-yellow: #E6DB74;
-@sandstone: #CFCFC2;
-@lace: #F8F8F0;
-@white: #FFFFFF;
-@black: #000000;
-**/
+@syntax-gutter:    darken(@text-fg, 25%);
+@syntax-guide:     @very-dark-gray;
+@syntax-accent:    lighten(@pink, 7%);

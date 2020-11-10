@@ -3,7 +3,24 @@
     color: @syntax-bracket;
   }
 
+  .syntax--entity.syntax--name.syntax--function {
+    color: @syntax-color-property;
+  }
+
+  .syntax--constant.syntax--numeric {
+    color: @syntax-color-keyword;
+  }
+
   .syntax--variable.syntax--parameter {
+    color: @syntax-color-numeric;
+  }
+
+  .syntax--support.syntax--function {
     color: @syntax-color-variable;
+    font-weight: bold;
+  }
+
+  .syntax--keyword.syntax--control {
+    color: @syntax-color-import;
   }
 }

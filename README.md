@@ -1,25 +1,24 @@
-# late-nights-syntax theme
+# late-nights-syntax
 
-My personal theme creation, mainly coded for my own use because I got tired of searching for a theme that had what I was looking for so I decided to attempt my own....
+## Install
+Via Atom: 'Preferences/Settings > Install' then search for late-nights-syntax (be sure you're under the 'Themes' tab)
 
-![Screenshot of Java & Python](https://github.com/clnelson/late-nights-syntax/blob/master/screenshot.png)
+Via Terminal:   `apm install late-nights-syntax`
 
-*** The following languages are currently supported ***
-* BASH
-* C/C++
-* CS
-* CSS
-* Elixir
-* GFM
-* Go
-* Ini
-* Java
-* JavaScript
-* JSON
-* NG
-* PHP
-* Python
-* Ruby
-* Typescript
-* YML
-* XML
+===
+
+## Screenshots
+
+<h4 align="center">More than 15 languages currently supported</h4>
+
+<p align="center">
+  <img width="600" height="540" src="https://github.com/clnelson/late-nights-syntax/blob/master/images/screenshot1.png?raw=true">
+</p>
+
+---
+
+<p align="center">
+  <img width="900" height="600" src="https://github.com/clnelson/late-nights-syntax/blob/master/images/screenshot.png?raw=true">
+</p>
+
+---
